@@ -35,14 +35,8 @@
       </ul>
 
       <h3>Finding in Arrays</h3>
-      <p>Finding by property:         
-        <p 
-        :class="{ 'highlight' : isActive }"
-        :style="{color: textColor, fontSize: fontSize + 'px'}">
-            {{ orwell?.name }}
-        </p>
-      </p>
-      
+      <p>Finding by property:   {{ orwell?.name }}   </p>
+
       <h3>Nested Arrays/Objects</h3>
       <p>{{ austen?.name }}'s works:</p>
       <!-- Activity 9: Render a list of Austen's works. Hint: Use the v-for directive to iterate through the array of authors that you have filtered out. -->
@@ -118,7 +112,11 @@
     <section class="lab-section">
       <h2>Attribute, Class and Style Binding with <code>v-bind</code></h2>
       <p>Highlighting Specific Authors:</p>
-
+        <p 
+        :class="{ 'highlight' : isActive }"
+        :style="{color: textColor, fontSize: fontSize + 'px'}">
+            {{ orwell?.name }}
+        </p>
     </section>
   </div>
 </template>
